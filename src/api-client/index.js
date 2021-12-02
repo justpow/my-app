@@ -1,9 +1,9 @@
 import fetch from 'node-fetch';
 import apiUrl from './apiUrl'
 
-// Register
-const register = (data) => {
-    return fetch(apiUrl.register, {
+// login
+const login = (data) => {
+    return fetch(apiUrl.login, {
         method: 'post',
         body:    JSON.stringify(data),
         headers: { 'Content-Type': 'application/json' },
@@ -11,7 +11,7 @@ const register = (data) => {
 }
 
 export default {
-  register,
+  login,
   //login,
   //dan lain-lain,
 }
